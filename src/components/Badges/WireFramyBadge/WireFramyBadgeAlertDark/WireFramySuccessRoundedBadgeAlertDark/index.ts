@@ -1,0 +1,3 @@
+import WireFramySuccessRoundedBadgeAlertDark from "./WireFramySuccessRoundedBadgeAlertDark";
+
+export default WireFramySuccessRoundedBadgeAlertDark
