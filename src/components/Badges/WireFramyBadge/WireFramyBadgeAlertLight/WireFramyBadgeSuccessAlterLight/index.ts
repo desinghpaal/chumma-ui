@@ -1,0 +1,3 @@
+import WireFramyBadgeSuccessRoundEdgedAlterLight from "./WireFramyBadgeSuccessRoundEdgedAlterLight";
+
+export default WireFramyBadgeSuccessRoundEdgedAlterLight
