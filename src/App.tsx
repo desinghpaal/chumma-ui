@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {getLargeButtons} from "./components/Badges/BackgroundColorButton/BackgroundColorLargeButton";
+import {getDefaultButtons} from "./components/Badges/BackgroundColorButton/BackgroundColorDefaultButton";
+import {getWireFramyBadgeAlertDarkButtons} from "./components/Badges/WireFramyBadge/WireFramyBadgeAlertDark";
+import {getWireFramyBadgeAlertLight} from "./components/Badges/WireFramyBadge/WireFramyBadgeAlertLight";
+import {getWireFramyBadgesAlterWithWhiteBG} from "./components/Badges/WireFramyBadge/WireFramyWhiteBadge";
+import Badges from "./components/Badges";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <Badges/>
+                {/*{getLargeButtons()}*/}
+                {/*{getDefaultButtons()}*/}
+                {/*{getWireFramyBadgeAlertLight()}*/}
+                {/*{getWireFramyBadgeAlertDarkButtons()}*/}
+            </header>
+        </div>
+    );
 }
+
 
 export default App;
