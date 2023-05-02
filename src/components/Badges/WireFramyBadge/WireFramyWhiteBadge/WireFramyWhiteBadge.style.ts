@@ -11,7 +11,7 @@ export const BadgeContainer = styled(LightBadgeContainer)`
   gap: 5px;
   padding: 6px 7px;
   border: 1px solid;
-  border-radius: ${({roundEdge}) => roundEdge ? `4px` : `17px`};
+  border-radius: ${({roundEdge}) => roundEdge ? `17px` : `4px`};
 `
 
 export const Ellipse = styled.div<{ color: string }>`

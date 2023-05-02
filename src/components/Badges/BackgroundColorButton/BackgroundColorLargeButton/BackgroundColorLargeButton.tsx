@@ -12,7 +12,7 @@ import WarningRound from "./WarningRound";
 import InfoSquare from "./InfoSquare";
 import InfoRound from "./InfoRound";
 import React from "react";
-import {ButtonContainer} from "../BackgroundColorButton.style";
+import {BadgeRow, ButtonContainer} from "../BackgroundColorButton.style";
 
 const BackgroundColorLargeButton = ({text, roundEdge, bgColor, textColor}: BackgroundColorButtonProps) => {
     return (
@@ -24,23 +24,25 @@ const BackgroundColorLargeButton = ({text, roundEdge, bgColor, textColor}: Backg
 export default BackgroundColorLargeButton
 
 export function getLargeButtons() {
-    return <ButtonContainer>
-        <PrimarySquare text={"Primary"}/>
-        <PrimaryRound text={"Primary"}/>
+    return (
+        <ButtonContainer>
+            <BadgeRow>
+                <PrimarySquare text={"Primary"}/>
+                <SecondarySquare text={"Secondary"}/>
+                <SuccessSquare text={"Success"}/>
+                <ErrorSquare text={"Error"}/>
+                <WarningSquare text={"Warning"}/>
+                <InfoSquare text={"Info"}/>
+            </BadgeRow>
 
-        <SecondarySquare text={"Secondary"}/>
-        <SecondaryRound text={"Secondary"}/>
-
-        <SuccessSquare text={"Success"}/>
-        <SuccessRound text={"Success"}/>
-
-        <ErrorSquare text={"Error"}/>
-        <ErrorRound text={"Error"}/>
-
-        <WarningSquare text={"Warning"}/>
-        <WarningRound text={"Warning"}/>
-
-        <InfoSquare text={"Info"}/>
-        <InfoRound text={"Info"}/>
-    </ButtonContainer>;
+            <BadgeRow>
+                <PrimaryRound text={"Primary"}/>
+                <SecondaryRound text={"Secondary"}/>
+                <SuccessRound text={"Success"}/>
+                <ErrorRound text={"Error"}/>
+                <WarningRound text={"Warning"}/>
+                <InfoRound text={"Info"}/>
+            </BadgeRow>
+        </ButtonContainer>
+    );
 }

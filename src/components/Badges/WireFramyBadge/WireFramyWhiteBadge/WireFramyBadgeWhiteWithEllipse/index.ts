@@ -1,0 +1,3 @@
+import WireFramyWhiteBadgeWithEllipse from "./WireFramyWhiteBadgeWithEllipse";
+
+export default WireFramyWhiteBadgeWithEllipse

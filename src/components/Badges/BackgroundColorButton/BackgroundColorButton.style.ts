@@ -58,3 +58,9 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   gap: 10px;
 `
+
+export const BadgeRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`
